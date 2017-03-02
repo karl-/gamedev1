@@ -4,21 +4,26 @@ using System.Collections;
 public class DoorController : MonoBehaviour
 {
 	public Animator animator;
-	public Rect openDoorRectangle;
-	public Rect closeDoorRectangle;
 
-	void OnGUI()
+	public void OnTriggerEnter(Collider collider)
 	{
-		if(GUI.Button(openDoorRectangle, "Open Door"))
-		{
-			animator.SetInteger("Door Open", 1);
-			animator.SetInteger("Door Close", 0);
-		}
+		OpenDoor();
+	}
 
-		if(GUI.Button(closeDoorRectangle, "Close Door"))
-		{
-			animator.SetInteger("Door Open", 0);
-			animator.SetInteger("Door Close", 1);
-		}
+	public void OnTriggerExit(Collider collider)
+	{
+		CloseDoor();
+	}
+
+	public void OpenDoor()
+	{
+		animator.SetInteger("Door Open", 1);
+		animator.SetInteger("Door Close", 0);
+	}
+
+	public void CloseDoor()
+	{
+		animator.SetInteger("Door Open", 0);
+		animator.SetInteger("Door Close", 1);
 	}
 }

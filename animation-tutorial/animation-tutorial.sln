@@ -1,7 +1,11 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{55C39D99-1304-3C84-0573-7D8C2449BE27}") = "animation-tutorial", "Assembly-CSharp-firstpass.csproj", "{98C27368-C617-65ED-D050-0785FD747164}"
+EndProject
 Project("{55C39D99-1304-3C84-0573-7D8C2449BE27}") = "animation-tutorial", "Assembly-CSharp.csproj", "{2EE5A45B-8957-7604-9289-5B9E06546EA2}"
+EndProject
+Project("{55C39D99-1304-3C84-0573-7D8C2449BE27}") = "animation-tutorial", "Assembly-CSharp-Editor.csproj", "{33DBCBCB-3D98-62F7-001E-A50DB833B1FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C27368-C617-65ED-D050-0785FD747164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C27368-C617-65ED-D050-0785FD747164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C27368-C617-65ED-D050-0785FD747164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C27368-C617-65ED-D050-0785FD747164}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EE5A45B-8957-7604-9289-5B9E06546EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EE5A45B-8957-7604-9289-5B9E06546EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE5A45B-8957-7604-9289-5B9E06546EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE5A45B-8957-7604-9289-5B9E06546EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DBCBCB-3D98-62F7-001E-A50DB833B1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DBCBCB-3D98-62F7-001E-A50DB833B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DBCBCB-3D98-62F7-001E-A50DB833B1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DBCBCB-3D98-62F7-001E-A50DB833B1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
