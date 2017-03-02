@@ -1,27 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorController : MonoBehaviour {
+public class DoorController : MonoBehaviour
+{
+	public Animator animator;
+	public Rect openDoorRectangle;
+	public Rect closeDoorRectangle;
 
-	Animator animator;
-
-	// Use this for initialization
-	void Start () {
-		animator = GetComponent<Animator>();
-	}
-	
-	void OnGUI () {
-
-		if(GUILayout.Button("Open Door"))
+	void OnGUI()
+	{
+		if(GUI.Button(openDoorRectangle, "Open Door"))
 		{
-			animator.SetInteger("Door Close", 0);
 			animator.SetInteger("Door Open", 1);
+			animator.SetInteger("Door Close", 0);
 		}
 
-		if(GUILayout.Button("Close Door"))
+		if(GUI.Button(closeDoorRectangle, "Close Door"))
 		{
-			animator.SetInteger("Door Close", 1);
 			animator.SetInteger("Door Open", 0);
+			animator.SetInteger("Door Close", 1);
 		}
 	}
 }
